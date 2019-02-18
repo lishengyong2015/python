@@ -11,4 +11,4 @@ links = []
 links = soup.select("a")
 for a in links:
 	print(a.text)
-	print（a.get("href"))
+	print(a.get("href"))
