@@ -8,6 +8,7 @@ print('start...')
 while True:
 	data,address=s_handle.recvfrom(1024)
 	print(data,address)
+	s_handle.sendto('Service got data.', address)
 	if data=='exit':
 		break
 		pass
